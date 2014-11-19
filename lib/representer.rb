@@ -13,7 +13,7 @@ class Representer
   private
 
   def collection
-    @collection ||= Array(@value)
+    @collection ||= [@value].flatten
   end
 
   def definition_class
